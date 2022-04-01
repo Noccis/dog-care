@@ -4,33 +4,22 @@ import Welcome from './components/Welcome';
 import Register from './components/Register';
 import Info from './components/Info';
 import { useEffect, useState } from 'react';
+import {HashRouter as Router, Route, Routes} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 // import DogRegisterList from './components/DogRegisterList';
 
 function App() {
  
-
-  // const listOfDogs = getDogRegisterFromApi();
-
-  // Controlling what shows under header
-  const WELCOME = 'welcome', REGISTER = 'register', INFO = 'info';
-  const [currentScreen, setCurrentScreen] = useState(WELCOME);
+  // List of dogs that will update when the fetch is done
   const [dogList, setDogList] = useState(null);
-  let content = null
-  
-  switch(currentScreen) {
-    case REGISTER:
-      content = <Register />
-      break;
 
-    case INFO:
-      content = <Info />
+  // Dog object for showing detailed info about a dog in the Info component
+  const [activeDog, setActiveDog] = useState(null);
 
-    default:
-      content = <Welcome /> 
-      
-  }
 
+  // Get the API data when webpage starts
    useEffect(() => {getData()}, [])
+
 
   // Function to recieve JSON list from API
   async function getData() {
@@ -46,39 +35,41 @@ function App() {
   // console.log(data);
     
   }
-
- // const listOfDogs = getData();
-   
+  
 
   return (
     <div className="App">
       <header className="App-header">
         <h1>Doggy Daycare</h1>
+        <div>
+        <Link to={"/register"}>
+            <button>Our dogs</button>
+        </Link>
+        <Link to={"/"}>
+            <button>Home</button>
+        </Link>
+        <Link to={"/info"}>
+          <button>Info</button>
+        </Link>
+        </div>
       </header>
-      {content}
-      <List doglist={dogList} /> 
-
+      
+        <Routes>
+          <Route exact path='/' element={
+                <Welcome activeDog={activeDog} />
+          } />
+          <Route path='/register' element={
+            <Register dogList={dogList} showInfo={setActiveDog} dodo={activeDog} />
+          }/>
+          <Route path='/info' element={
+            <Info activeDog={activeDog} />
+          }/>
+        </Routes>
+      
     </div>
   );
 }
 
-const List = ({doglist}) => {
-
-  let nameList = null;
-  // console.log(doglist);
-  if(doglist != null) {
-    nameList = doglist.map(dog => (
-      <p>{dog.name}</p>
-    ))
-  }
-  
-  return(
-    
-    <div>
-     {nameList}
-    </div>
-
-  )
-} 
-
 export default App;
+// background-size: cover;
+// import '../../styles/welcome.css'
