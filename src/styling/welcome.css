@@ -1,6 +1,9 @@
 .header-image-container {
     position: relative;
 }
+.header-image-container img {
+    width: 100%;
+}
 
 .slogan {
     position: absolute;
