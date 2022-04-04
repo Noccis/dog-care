@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import '../styling/register.css';
 
 const Register = ({dogList, showInfo, dodo}) => {
 

@@ -1,0 +1,32 @@
+
+
+.header-image {
+    width: 100%;
+  }
+  
+  
+  .dog-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .dog {
+    width: 11%;
+    height: 11%;
+    background-color: antiquewhite;
+    border: 1px solid rgb(78, 42, 42);
+    border-radius: 8px;
+    margin: 0.5em;
+  }
+  
+  .dog img {
+    margin-top: 2%;
+    width:60%;
+    height: 60%;
+  
+  }
+  
+  .dog p {
+    font-weight: bold;
+  }

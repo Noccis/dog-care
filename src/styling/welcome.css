@@ -1,0 +1,10 @@
+.welcome-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.welcome-information p {
+    display: inline-block;
+    margin: 10px;
+}
