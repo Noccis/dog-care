@@ -7,8 +7,8 @@ const Info = ({activeDog}) => {
 
     return (
         <section className="info-section">
-            <div className='header-image-container'>
-                <img src={dogHeader} className="header-image"/>
+            <div className='small-header-image-container'>
+                <img src={dogHeader} className="small-header-image"/>
             </div>
             
             <img src={activeDog.img} alt="Picture of a dog" />

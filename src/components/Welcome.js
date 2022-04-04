@@ -7,7 +7,7 @@ const Welcome = () => {
         <section>
             <div className='header-image-container'>
             <img src={dogHeader} alt="Cute dogs playing" className='header-image'></img>
-            <p className='slogan'>"Sometimes my beloved Pixma don't want to go home <br /> 
+            <p className='slogan'>"Sometimes my beloved Pixma don't want to go home, <br /> 
             I take that as a good sign."<br/>
             - Happy dog owner</p>
             </div>
