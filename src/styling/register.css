@@ -42,15 +42,33 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
   }
   
-  .dog img {
+  #link-container {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    
+  }
+
+
+  .dog-img {
     /* margin-top: 2%; */
     width:60%;
     height: 60%;
   
   }
   
-  .dog p {
+  .dog-name{
     font-weight: bold;
+    text-decoration: none;
+  }
+
+  #dog-name {
+    text-decoration: none;
   }

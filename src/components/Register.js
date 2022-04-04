@@ -14,12 +14,14 @@ const Register = ({dogList, showInfo, dodo}) => {
 
       listOfDogs = dogList.map(dog => (
 
-          <div key={dog.name} className="dog">
+          <div key={dog.name} className="dog" onClick={() => showInfo(dog)}>
              
-             <img src={dog.img} alt="Picture of a dog" />  
-             <p>{dog.name}</p>
-             <Link to={"/info"}>
-                <button onClick={() => showInfo(dog)}>Show info</button>
+             
+             <Link to={"/info"} id="link-container">
+                {/* <button onClick={() => showInfo(dog)}>Show info</button> */}
+                <img src={dog.img} alt="Picture of a dog" className="dog-img" />  
+                <p id="dog-name" className="dog-name">{dog.name}</p>
+
              </Link>
              
           </div>   
@@ -32,7 +34,7 @@ const Register = ({dogList, showInfo, dodo}) => {
         <section className="register">
           <div className='header-image-container'>
             <img src={dogHeader} className="small-header-image"/>
-            <p className="page-info"><span>Our dogs</span> - click a dog for more info</p>
+            <p className="page-info"><span>Our dogs</span> - click on a dog for more info</p>
           </div>
            {/*  <button onClick={() => {
                 console.log(dodo);
