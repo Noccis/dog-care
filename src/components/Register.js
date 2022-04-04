@@ -1,5 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import '../styling/register.css';
+import dogHeader from '../images/dogsplayingheader.jpg';
 
 const Register = ({dogList, showInfo, dodo}) => {
 
@@ -28,7 +30,10 @@ const Register = ({dogList, showInfo, dodo}) => {
 
     return (
         <section className="register">
-            <h2>List of our dogs</h2>
+          <div className='header-image-container'>
+            <img src={dogHeader} className="header-image"/>
+            <p className="page-info"><span>Our dogs</span> - click a dog for more info</p>
+          </div>
             <button onClick={() => {
                 console.log(dodo);
             }}>Print Dog</button>

@@ -6,6 +6,7 @@ import Info from './components/Info';
 import { useEffect, useState } from 'react';
 import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import { Link } from 'react-router-dom';
+import dogoLogo from './images/doggylogo.png';
 // import DogRegisterList from './components/DogRegisterList';
 
 function App() {
@@ -40,17 +41,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>Doggy Daycare</h1>
-        <div>
-        <Link to={"/register"}>
-            <button>Our dogs</button>
-        </Link>
-        <Link to={"/"}>
+        <img src={dogoLogo} alt="Dog Logo" />
+        <div className='main-link-container'>
+          <Link to={"/"}>
             <button>Home</button>
-        </Link>
-        <Link to={"/info"}>
-          <button>Info</button>
-        </Link>
+          </Link>
+          <Link to={"/register"}>
+            <button>Our dogs</button>
+          </Link>
+          <Link to={"/info"}>
+            <button>Info</button>
+          </Link>
         </div>
       </header>
       
