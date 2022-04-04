@@ -4,12 +4,15 @@ const Info = ({activeDog}) => {
 
 
     return (
-        <section>
-            <p>Info</p>
-            <p>{activeDog.name}</p>
-            <button onClick={() => {
-                console.log(activeDog.name)
-            }}>print</button>
+        <section className="info-section">
+            <img src={activeDog.img} alt="Picture of a dog" />
+            <div className="info-text">
+             <p>Namn: {activeDog.name}</p>
+             <p>Ras: {activeDog.breed}</p>
+             <p>Kön: {activeDog.sex}</p>
+             <p>Ålder: {activeDog.age}</p>
+             <p>Ägare: {activeDog.owner.name} {activeDog.owner.lastName}</p>
+            </div>
         </section>
     )
 }
