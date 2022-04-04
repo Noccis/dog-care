@@ -56,7 +56,7 @@ function App() {
       
         <Routes>
           <Route exact path='/' element={
-                <Welcome activeDog={activeDog} />
+                <Welcome />
           } />
           <Route path='/register' element={
             <Register dogList={dogList} showInfo={setActiveDog} dodo={activeDog} />
