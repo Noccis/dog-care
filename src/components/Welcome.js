@@ -1,11 +1,16 @@
 import { Link } from 'react-router-dom';
-import dogHeader from '../images/dogsplayingheader2.jpg';
+import dogHeader from '../images/dogsplayingheader.jpg';
 import '../styling/welcome.css'
 
 const Welcome = () => {
     return (
         <section>
+            <div className='header-image-container'>
             <img src={dogHeader} alt="Cute dogs playing" className='header-image'></img>
+            <p className='slogan'>"Sometimes my beloved Pixma don't want to go home <br /> 
+            I take that as a good sign."<br/>
+            - Happy dog owner</p>
+            </div>
             <h1>Welcome to Doggy daycare</h1>
             <div className='welcome-information'>
             <p>"Quote from happy owner"</p>
