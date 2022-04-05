@@ -72,4 +72,11 @@
     font-size: 1.2em;
   }
 
+  .bg-white {
+    background-color: white;
+  }
+
+  .bg-grey {
+    background-color: lightgray;
+  }
   
