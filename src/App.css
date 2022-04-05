@@ -1,9 +1,11 @@
 body {
   background-color: #EAFCD5;
+  height: 100%;
 }
 .App {
   text-align: center;
   font-family: 'Segoe UI';
+  height: 100%;
 }
 
 .App-header {
@@ -13,11 +15,6 @@ body {
   
 }
 
-.App-header img, div {
-  margin: 10px;
-  margin-left: 15px;
-}
-
 .main-link-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -25,7 +22,7 @@ body {
 }
 
 .main-link-container button {
-  width: 140px;
+  width: 170px;
   grid-column: auto;
   font-size: 1.2em;
   height: 50px;
@@ -39,3 +36,10 @@ body {
   font-weight: bold;
   font-size: 1.3em;
 }
+
+
+/* section {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+} */

@@ -10,15 +10,17 @@ const Info = ({activeDog}) => {
             <div className='small-header-image-container'>
                 <img src={dogHeader} className="small-header-image"/>
             </div>
-            
-            <img src={activeDog.img} alt="Picture of a dog" />
-            <div className="info-text">
-                <p>Namn: {activeDog.name}</p>
-                <p>Ras: {activeDog.breed}</p>
-                <p>Kön: {activeDog.sex}</p>
-                <p>Ålder: {activeDog.age}</p>
-                <p>Ägare: {activeDog.owner.name} {activeDog.owner.lastName}</p>
+            <div className="dog-info-container">
+                <img src={activeDog.img} alt="Picture of a dog" />
+                <div className="info-text-container">
+                    <p><span className="bold">Name:  </span>{activeDog.name}</p>
+                    <p><span className="bold">Breed:  </span>{activeDog.breed}</p>
+                    <p><span className="bold">Gender:  </span>{activeDog.sex}</p>
+                    <p><span className="bold">Age:  </span>{activeDog.age}</p>
+                    <p><span className="bold">Owner:  </span>{activeDog.owner.name} {activeDog.owner.lastName}</p>
+                </div>
             </div>
+            
         </section>
     )
 }
