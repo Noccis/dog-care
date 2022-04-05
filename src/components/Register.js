@@ -20,7 +20,7 @@ const Register = ({dogList, showInfo, dodo}) => {
              <Link to={"/info"} id="link-container">
                 {/* <button onClick={() => showInfo(dog)}>Show info</button> */}
                 <img src={dog.img} alt="Picture of a dog" className="dog-img" />  
-                <p id="dog-name" className="dog-name">{dog.name}</p>
+                <p className="dog-name">{dog.name}</p>
 
              </Link>
              
