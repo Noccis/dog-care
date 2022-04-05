@@ -32,11 +32,13 @@ function App() {
     const data = await respons.json();
 
     setDogList(data);
+
  //   console.log("Data converted to json:")
   // console.log(data);
     
   }
   
+  console.log("Version 1.something");
 
   return (
     <div className="App">

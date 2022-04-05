@@ -1,3 +1,8 @@
+.info-section {
+      width: 100%;
+      height: 100%;
+}
+
 .header-image-container {
     position: relative;
 }
@@ -20,5 +25,38 @@
 }
   
 .page-info span {
+      font-weight: bold;
+}
+
+.dog-info-container {
+      margin-top: 100px;
+      background-color: white;
+      border-radius: 10px;
+      min-width: 700px;
+      width: 900px;
+      height: 500px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      /* box-shadow: 5px, 5px, gray; */
+      border: 1px solid gray;
+}
+
+.dog-info-container img {
+      margin: 30px;
+      max-width: 400px;
+      object-fit: cover;
+      object-position: 40% 0;
+      border-radius: 10px;
+     
+}
+
+.info-text-container {
+      margin-top: 20px;
+      text-align: left;
+      font-size: 1.3rem;
+}
+
+.bold {
       font-weight: bold;
 }
