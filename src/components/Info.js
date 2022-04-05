@@ -18,6 +18,7 @@ const Info = ({activeDog}) => {
                     <p><span className="bold">Gender:  </span>{activeDog.sex}</p>
                     <p><span className="bold">Age:  </span>{activeDog.age}</p>
                     <p><span className="bold">Owner:  </span>{activeDog.owner.name} {activeDog.owner.lastName}</p>
+                    <p><span className="bold">Present: </span>{(activeDog.present ? 'Yes' : 'No')}</p>
                 </div>
             </div>
             

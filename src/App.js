@@ -49,7 +49,7 @@ function App() {
             <button>Home</button>
           </Link>
           <Link to={"/register"}>
-            <button>Our dogs</button>
+            <button>Meet the pack</button>
           </Link>
           <Link to={"/info"}>
             <button>Info</button>
