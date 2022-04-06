@@ -7,7 +7,7 @@ import { useEffect, useState } from 'react';
 import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import dogoLogo from './images/doggylogo.png';
-// import DogRegisterList from './components/DogRegisterList';
+import DogRegisterList from './components/DogRegisterList';
 
 function App() {
  
@@ -19,7 +19,9 @@ function App() {
 
 
   // Get the API data when webpage starts
-   useEffect(() => {getData()}, [])
+  // useEffect(() => {getData()}, [])
+  useEffect(() => {DogRegisterList(setDogList)}, [])
+  
 
 
   // Function to recieve JSON list from API
