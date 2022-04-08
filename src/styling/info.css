@@ -28,8 +28,30 @@
       font-weight: bold;
 }
 
+.back-container {
+      display: flex;
+      align-items: center;
+      margin-top: 40px;
+      margin-left: 50px;
+      position: absolute;
+      text-decoration: none;
+      color: black;
+}
+
+.back-container img {
+      max-width: 30px;
+      
+}
+
+.back-container p {
+      font-weight: bold;
+      font-size: 1.2em;
+      margin-left: 10px;
+}
+
+
 .dog-info-container {
-      margin-top: 100px;
+      margin-top: 50px;
       background-color: white;
       border-radius: 10px;
       min-width: 700px;
@@ -47,6 +69,7 @@
       max-width: 400px;
       object-fit: cover;
       object-position: 40% 0;
+      border: 1px solid black;
       border-radius: 10px;
      
 }
