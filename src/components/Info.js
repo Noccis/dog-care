@@ -1,6 +1,8 @@
 import { useState } from "react";
 import dogHeader from '../images/dogsplayingheader.jpg';
 import '../styling/info.css';
+import backButton from '../images/backArrow.png';
+import { Link } from "react-router-dom";
 
 const Info = ({activeDog}) => {
 
@@ -10,6 +12,14 @@ const Info = ({activeDog}) => {
             <div className='small-header-image-container'>
                 <img src={dogHeader} className="small-header-image"/>
             </div>
+
+
+            <Link to={"/register"} className="back-container">
+                <img src={backButton}/>
+                <p>Back</p>
+            </Link>
+
+
             <div className="dog-info-container">
                 <img src={activeDog.img} alt="Picture of a dog" />
                 <div className="info-text-container">
