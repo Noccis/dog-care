@@ -39,8 +39,28 @@ body {
 }
 
 
-/* section {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-} */
+@media only screen and (max-width: 768px) {
+  .App-header {
+    flex-direction: column;
+    padding-top: 10px;
+    margin-bottom: 0px;
+  }
+
+  .main-link-container {
+    margin-top: 5px;
+    width: 100%;
+  }
+
+  .main-link-container button {
+    border: 1px solid gray;
+    width: 100%;
+  }
+
+  .main-link-container button:hover {
+    background-color: #A1DC5D;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+
+}
