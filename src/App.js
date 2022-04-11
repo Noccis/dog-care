@@ -41,7 +41,7 @@ function App() {
     
   }
   
-  console.log("Version 1.something");
+  console.log("Version 1.2");
 
   return (
     <div className="App">

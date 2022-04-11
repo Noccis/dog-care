@@ -6,11 +6,11 @@ const Welcome = () => {
     return (
         <section>
             <div className='header-image-container'>
-            <img src={dogHeader} alt="Cute dogs playing" className='header-image'></img>
-            <div className='quote-container'>
-                <p className='slogan'>"Sometimes my beloved Pixma don't want to go home, <br /> 
-            I take that as a good sign."<br/>
-            - Happy dog owner</p>
+                <img src={dogHeader} alt="Cute dogs playing" className='header-image'></img>
+                <div className='quote-container'>
+                    <p className='slogan'>"Sometimes my beloved Pixma don't want to go home, <br /> 
+                     I take that as a good sign."<br/>
+                    - Happy dog owner</p>
             </div>
             
             </div>
