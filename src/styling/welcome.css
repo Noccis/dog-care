@@ -5,12 +5,17 @@
     width: 100%;
 }
 
-.slogan {
+.quote-container {
+    width: 50%;
     position: absolute;
     left: 60px;
     top: 70px;
-    font-size: 2em;
+    max-height: 400px;
     color: white;
+}
+
+.slogan {
+    font-size: 2em;
     text-align: left;
 }
 
@@ -23,4 +28,36 @@
 .welcome-information p {
     display: inline-block;
     margin: 10px;
+}
+
+/* Making sure quote text is shrinking with screen */
+@media only screen and (max-width: 1150px) {
+    .slogan {
+        font-size: 1.3em;
+    }
+}
+/* Making sure quote text is shrinking with screen */
+@media only screen and (max-width: 900px) {
+    .slogan {
+        font-size: 1em;
+    }
+}
+
+/* Mobile size */
+@media only screen and (max-width: 768px) {
+    .slogan {
+        font-size: 0.9em;
+    }
+
+    .quote-container {
+        width: 100%;
+        position:static;
+        color: rgb(34, 33, 33);
+        font-style: italic;
+    }
+
+    .slogan {
+        font-size: 1.2em;
+        text-align: center;
+    }
 }
