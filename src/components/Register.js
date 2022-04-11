@@ -28,7 +28,7 @@ const Register = ({dogList, showInfo, dodo}) => {
           </div>   
         ))
 
-      //  console.log('REGISTER, dogList is not null!' + listOfDogs)
+      
     }
 
     return (
@@ -37,9 +37,6 @@ const Register = ({dogList, showInfo, dodo}) => {
             <img src={dogHeader} className="small-header-image"/>
             <p className="page-info"><span>The pack</span> - click on a dog for more info</p>
           </div>
-           {/*  <button onClick={() => {
-                console.log(dodo);
-            }}>Print Dog</button> */}
             <section className="dog-list">
                 {listOfDogs}
             </section>
