@@ -8,6 +8,7 @@ import {HashRouter as Router, Route, Routes} from 'react-router-dom';
 import { Link } from 'react-router-dom';
 import dogoLogo from './images/doggylogo.png';
 import DogRegisterList from './components/DogRegisterList';
+import Join from './components/Join';
 
 function App() {
  
@@ -53,8 +54,8 @@ function App() {
           <Link to={"/register"}>
             <button>Meet the pack</button>
           </Link>
-          <Link to={"/info"}>
-            <button>Info</button>
+          <Link to={"/join"}>
+            <button>Join us</button>
           </Link>
         </div>
       </header>
@@ -65,10 +66,13 @@ function App() {
           } />
           <Route path='/register' element={
             <Register dogList={dogList} showInfo={setActiveDog} dodo={activeDog} />
-          }/>
+          } />
           <Route path='/info' element={
             <Info activeDog={activeDog} />
-          }/>
+          } />
+          <Route path='/join' element={
+            <Join />
+          } />
         </Routes>
       
     </div>
