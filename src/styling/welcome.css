@@ -27,9 +27,9 @@
 
 .welcome-information img {
     margin: 2%;
-    margin-top: 2%;
+    margin-top: 3%;
     width: 25%;
-    min-width: 350px;
+    min-width: 450px;
     border: 1px solid rgb(50, 58, 52);
     border-radius: 3px;
 
@@ -45,6 +45,18 @@
     margin-right: 2%;
     text-align: left;
     font-size: 1.2em;
+}
+
+.quotes {
+    display: flex;
+}
+
+.quotes p {
+    border: 1px solid black;
+    border-radius: 7px;
+    margin: 20px;
+    padding: 10px;
+    background-color: #f9fcd5;
 }
 
 /* Making sure quote text is shrinking with screen */
