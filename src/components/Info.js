@@ -13,12 +13,10 @@ const Info = ({activeDog}) => {
                 <img src={dogHeader} className="small-header-image"/>
             </div>
 
-
             <Link to={"/register"} className="back-container">
                 <img src={backButton}/>
                 <p>Back</p>
             </Link>
-
 
             <div className="dog-info-container">
                 <img src={activeDog.img} alt="Picture of a dog" />
