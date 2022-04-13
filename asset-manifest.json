@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/dog-care/static/css/main.3f51042e.css",
-    "main.js": "/dog-care/static/js/main.1d5bbb0e.js",
+    "main.css": "/dog-care/static/css/main.3268e2ef.css",
+    "main.js": "/dog-care/static/js/main.b6f8bfcc.js",
     "static/js/787.70eef7be.chunk.js": "/dog-care/static/js/787.70eef7be.chunk.js",
     "static/media/dogsplayingheader.jpg": "/dog-care/static/media/dogsplayingheader.3168e86a5ca73595d248.jpg",
+    "static/media/dogwalker.jpeg": "/dog-care/static/media/dogwalker.e754b517ac89ce6fc6e1.jpeg",
     "static/media/doggylogo.png": "/dog-care/static/media/doggylogo.6d2839b1d92920161e40.png",
     "index.html": "/dog-care/index.html",
-    "main.3f51042e.css.map": "/dog-care/static/css/main.3f51042e.css.map",
-    "main.1d5bbb0e.js.map": "/dog-care/static/js/main.1d5bbb0e.js.map",
+    "main.3268e2ef.css.map": "/dog-care/static/css/main.3268e2ef.css.map",
+    "main.b6f8bfcc.js.map": "/dog-care/static/js/main.b6f8bfcc.js.map",
     "787.70eef7be.chunk.js.map": "/dog-care/static/js/787.70eef7be.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3f51042e.css",
-    "static/js/main.1d5bbb0e.js"
+    "static/css/main.3268e2ef.css",
+    "static/js/main.b6f8bfcc.js"
   ]
 }
