@@ -4,8 +4,8 @@ import '../styling/welcome.css'
 
 import walkerImage from '../images/dogwalker.jpeg'
 
+// Simple welcome page with basic information
 const Welcome = () => {
-
 
     return (
         <section>
@@ -20,7 +20,7 @@ const Welcome = () => {
             
             <div className='welcome-information'>
                 <img src={walkerImage}/>
-                <div>
+                <div className='welcome-text'>
                     <h1>Welcome to Doggy daycare.</h1>
                     <p>When you leave your dog with us you can be sure that you get the best care for your best friend<br /> 
                     Not only do we love dogs, we have 2 educated dog trainers to ensure that every day contains not only long walks but also mental training so that you can relax when you get home from a long day of work.
@@ -42,7 +42,6 @@ const Welcome = () => {
                 </div>
             </aside>
             
-
         </section>
     )
 }

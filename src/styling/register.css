@@ -9,15 +9,6 @@
     object-position: 100% 35%;
   }
 
- /*  .page-info {
-    position: absolute;
-    left: 20px;
-    top: 5px;
-    font-size: 1.3em;
-    color: white;
-    text-align: left;
-    font-family: 'Segoe UI';
-  } */
 
   .page-info span {
     font-weight: bold;
@@ -98,10 +89,6 @@
     grid-template-columns: repeat(3, 1fr);
     margin-left: 10px;
     margin-right: 10px;
-    /* justify-content: center; */
-    /* flex-wrap: nowrap; */
-  
-   
   }
 
   .dog {
@@ -109,7 +96,6 @@
     max-width: 100px;
     height: 85%;
     margin: 0;
-    /* margin-top: 5px; */
     display: inline-block;
     justify-self: center;
     align-self: center;
@@ -138,6 +124,5 @@
   .dog-name{
     font-size: 0.9em;
   }
-
 
 }
