@@ -1,11 +1,10 @@
-import { useState } from "react";
 import dogHeader from '../images/dogsplayingheader.jpg';
 import '../styling/info.css';
 import backButton from '../images/backArrow.png';
 import { Link } from "react-router-dom";
 
+/* Component that takes in a dog that the user picked and shows more detailed information about it */
 const Info = ({activeDog}) => {
-
 
     return (
         <section className="info-section">

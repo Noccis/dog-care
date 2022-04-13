@@ -23,25 +23,8 @@ function App() {
   // useEffect(() => {getData()}, [])
   useEffect(() => {DogRegisterList(setDogList)}, [])
   
-
-
-  // Function to recieve JSON list from API
-  async function getData() {
-    const dogRegisterAPI = 'https://api.jsonbin.io/b/623dc40406182767437fb28d';
-
-    const respons = await fetch(dogRegisterAPI);
-    console.log("Fetch succesful");
-
-    const data = await respons.json();
-
-    setDogList(data);
-
- //   console.log("Data converted to json:")
-  // console.log(data);
-    
-  }
   
-  console.log("Version 1.2");
+  console.log("Version 2.0");
 
   return (
     <div className="App">
@@ -65,7 +48,7 @@ function App() {
                 <Welcome />
           } />
           <Route path='/register' element={
-            <Register dogList={dogList} showInfo={setActiveDog} dodo={activeDog} />
+            <Register dogList={dogList} showInfo={setActiveDog} />
           } />
           <Route path='/info' element={
             <Info activeDog={activeDog} />
@@ -80,5 +63,3 @@ function App() {
 }
 
 export default App;
-// background-size: cover;
-// import '../../styles/welcome.css'
