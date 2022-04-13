@@ -27,9 +27,10 @@
 
 .welcome-information img {
     margin: 2%;
-    margin-top: 3%;
-    width: 25%;
-    min-width: 450px;
+    margin-top: 25px;
+    width: 650px;
+    height: 300px;
+    object-fit: cover;
     border: 1px solid rgb(50, 58, 52);
     border-radius: 3px;
 
@@ -38,6 +39,7 @@
 .welcome-information h1 {
     color: rgb(53, 65, 53);
     text-decoration: underline;
+    text-align: left;
 }
 
 .welcome-information p {
@@ -51,12 +53,27 @@
     display: flex;
 }
 
-.quotes p {
+.quote {
     border: 1px solid black;
     border-radius: 7px;
     margin: 20px;
+    margin-top: 50px;
     padding: 10px;
     background-color: #f9fcd5;
+    display: flex;
+}
+
+.quote img {
+    width: 100px;
+    height: 145px;
+    object-fit: cover;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+.quote p {
+    margin: 10px;
+    font-style: italic;
+    text-align: left;
 }
 
 /* Making sure quote text is shrinking with screen */
@@ -102,8 +119,10 @@
 
     .welcome-information img {
         margin-top: 20px;
-        min-width: 300px;
-        width: 70%;
+        /* min-width: 300px; */
+        object-fit: fill;
+        width: 300px;
+        height: 180px;
         order: 2;
     }
 
@@ -113,5 +132,25 @@
         margin: 6px;
         text-align: left;
         font-size: 1em;
+    }
+
+    .quotes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .quote {
+        flex-direction: column-reverse;
+        align-items: center;
+        
+    }
+
+    .quote img {
+        /* width: 50px;
+        height: 80px;
+        object-fit: cover;
+        border: 1px solid black;
+        border-radius: 4px; */
+        display: none;
     }
 }
